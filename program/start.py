@@ -75,14 +75,14 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton("📚 Əmrlər", callback_data="cbcmds"),
-                    InlineKeyboardButton("😍 Sahibim", url=f"https://t.me/Rufoduu"),
+                    InlineKeyboardButton("😍 Bot Owner", url=f"https://t.me/Rufoduu"),
                 ],
                 [
                     InlineKeyboardButton(
                         "💬 Söhbət Qrupu", url=f"https://t.me/RealKarma9999"
                     ),
                     InlineKeyboardButton(
-                        "🥰 Kanalım", url=f"https://t.me/birqedeh1"
+                        "🥰 Kanal", url=f"https://t.me/birqedeh1"
                     ),
                 ],
             ]
@@ -111,7 +111,7 @@ async def alive(c: Client, message: Message):
         ]
     )
 
-    alive = f"**• Salam {message.from_user.mention()} {BOT_NAME}**\n\n🧑🏼‍💻 Sahibim: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n👾 Bot versiyası: `v{__version__}`\n🔥 Pragram versiyası: `{pyrover}`\n🐍 Python versiyası: `{__python_version__}`\n✨ PyTgCalls versiyası: `{pytover.__version__}`\n🆙 İşləmək durumu: `{uptime}`\n\n❤ **Məni qrupa əlavə etdiyiniz üçün təşəkkürlər 😍**"
+    alive = f"**• Salam {message.from_user.mention()} {BOT_NAME}**\n\n🧑🏼‍💻 Bot Owner: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n👾 Bot versiyası: `v{__version__}`\n🔥 Pragram versiyası: `{pyrover}`\n🐍 Python versiyası: `{__python_version__}`\n✨ PyTgCalls versiyası: `{pytover.__version__}`\n🆙 İşləmək durumu: `{uptime}`\n\n❤ **Məni qrupa əlavə etdiyiniz üçün təşəkkürlər 😍**"
 
     await c.send_photo(
         chat_id,
